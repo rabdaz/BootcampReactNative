@@ -2,10 +2,10 @@
 
 //Ayo Bermain warewolf
 //Masukan Nama dan Peran mu!
-var nama = "vera";
-var peran = "guard";
+console.log("Soal If Else1 =========")
+var nama = "";
+var peran = "";
 
-console.log("Soal If-else\n")
 if(nama == "" && peran == ""){
     console.log("Nama dan Peran Harus diisi!");
 }
@@ -24,7 +24,95 @@ else if(nama != ""){
     }
 }
 
-//Switch Case
+console.log("\nSoal If Else2 =========")
+var nama = "John";
+var peran = "";
+
+if(nama == "" && peran == ""){
+    console.log("Nama dan Peran Harus diisi!");
+}
+else if(nama != "" && peran == "" ){
+    console.log("Hallo "+nama+ ", Pilih peranmu untuk memulai game!");
+}
+else if(nama != ""){
+    if(peran == "penyihir"){
+        console.log('Selamat datang di Dunia Werewolf,'+nama+'\nHalo '+peran+' '+nama+', Kamu dapat melihat siapa yang menjadi warewolf!');
+    }
+    else if(peran == "guard"){
+        console.log('Selamat datang di Dunia Werewolf,'+nama+'\nHalo '+peran+' '+nama+', Kamu akan membantu melindungi temanmu dari serangan warewolf!');
+    }
+    else if(peran == "warewolf"){
+        console.log('Selamat datang di Dunia Werewolf,'+nama+'\nHalo '+peran+' '+nama+', Kamu akan memakan mangsa setiap malam!');
+    }
+}
+
+console.log("\nSoal If Else3 =========")
+var nama = "Jane";
+var peran = "penyihir";
+
+if(nama == "" && peran == ""){
+    console.log("Nama dan Peran Harus diisi!");
+}
+else if(nama != "" && peran == "" ){
+    console.log("Hallo "+nama+ ", Pilih peranmu untuk memulai game!");
+}
+else if(nama != ""){
+    if(peran == "penyihir"){
+        console.log('Selamat datang di Dunia Werewolf,'+nama+'\nHalo '+peran+' '+nama+', Kamu dapat melihat siapa yang menjadi warewolf!');
+    }
+    else if(peran == "guard"){
+        console.log('Selamat datang di Dunia Werewolf,'+nama+'\nHalo '+peran+' '+nama+', Kamu akan membantu melindungi temanmu dari serangan warewolf!');
+    }
+    else if(peran == "warewolf"){
+        console.log('Selamat datang di Dunia Werewolf,'+nama+'\nHalo '+peran+' '+nama+', Kamu akan memakan mangsa setiap malam!');
+    }
+}
+
+console.log("\nSoal If Else4 =========")
+var nama = "Jenita";
+var peran = "guard";
+
+if(nama == "" && peran == ""){
+    console.log("Nama dan Peran Harus diisi!");
+}
+else if(nama != "" && peran == "" ){
+    console.log("Hallo "+nama+ ", Pilih peranmu untuk memulai game!");
+}
+else if(nama != ""){
+    if(peran == "penyihir"){
+        console.log('Selamat datang di Dunia Werewolf,'+nama+'\nHalo '+peran+' '+nama+', Kamu dapat melihat siapa yang menjadi warewolf!');
+    }
+    else if(peran == "guard"){
+        console.log('Selamat datang di Dunia Werewolf,'+nama+'\nHalo '+peran+' '+nama+', Kamu akan membantu melindungi temanmu dari serangan warewolf!');
+    }
+    else if(peran == "warewolf"){
+        console.log('Selamat datang di Dunia Werewolf,'+nama+'\nHalo '+peran+' '+nama+', Kamu akan memakan mangsa setiap malam!');
+    }
+}
+
+console.log("\nSoal If Else5 =========")
+var nama = "Junaedi";
+var peran = "warewolf";
+
+if(nama == "" && peran == ""){
+    console.log("Nama dan Peran Harus diisi!");
+}
+else if(nama != "" && peran == "" ){
+    console.log("Hallo "+nama+ ", Pilih peranmu untuk memulai game!");
+}
+else if(nama != ""){
+    if(peran == "penyihir"){
+        console.log('Selamat datang di Dunia Werewolf,'+nama+'\nHalo '+peran+' '+nama+', Kamu dapat melihat siapa yang menjadi warewolf!');
+    }
+    else if(peran == "guard"){
+        console.log('Selamat datang di Dunia Werewolf,'+nama+'\nHalo '+peran+' '+nama+', Kamu akan membantu melindungi temanmu dari serangan warewolf!');
+    }
+    else if(peran == "warewolf"){
+        console.log('Selamat datang di Dunia Werewolf,'+nama+'\nHalo '+peran+' '+nama+', Kamu akan memakan mangsa setiap malam!');
+    }
+}
+
+//Soal Switch Case
 var tanggal =1;
 var bulan =1;
 var tahun =1945;
