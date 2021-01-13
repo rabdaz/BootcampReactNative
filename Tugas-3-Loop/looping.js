@@ -5,7 +5,7 @@ console.log("  TUGAS 1 LOOPING WHILE");
 console.log("=========================");
 
 console.log("LOOPING PERTAMA");
-var x = 0;
+var x = 1;
 while(x <= 20){
     if(x % 2 == 0){
         console.log( x +" - I love coding");
