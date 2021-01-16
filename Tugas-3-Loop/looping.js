@@ -75,7 +75,7 @@ for(var x = 0; x < sisi; x++){
     if(x % 2 == 0){
         for(var y = 0; y < sisi; y++){
             if(y % 2 == 1){
-                board+="#";
+                board+="1";
             }
             else{
                 board+=" ";
@@ -85,7 +85,7 @@ for(var x = 0; x < sisi; x++){
     else {
         for(var y = 0; y < sisi; y++){
             if(y % 2 ==0){
-                board+="#";
+                board+="1";
             }
             else{
                 board+=" ";
