@@ -19,18 +19,24 @@ function arrayToObject(arr) {
          gender:"",
          age:""
      }
-     
-     for(var x = 0; x < arr.length; x++ ){
-         var j = arr[x].length;
-         data.firstName = arr[x][0];
-         data.lastName = arr[x][1];
-         data.gender = arr[x][2];
-         data.age = arr[x][3] == null || arr[x][3]>thisYear? "Invalid Birth Year": thisYear - arr[x][3];
+     if(arr != null){
+        for(var x = 0; x < arr.length; x++ ){
+            var j = arr[x].length;
+            data.firstName = arr[x][0];
+            data.lastName = arr[x][1];
+            data.gender = arr[x][2];
+            data.age = arr[x][3] == null || arr[x][3]>thisYear? "Invalid Birth Year": thisYear - arr[x][3];
+            var num = x+1;
 
-         console.log(data.firstName, data.lastName);
-         console.log(data);
-     }
-     return data;
+            console.log(num+". "+data.firstName, data.lastName);
+            console.log(data);
+            console.log("\n");
+        }
+        return data;
+    }
+    else if(arr == nul || arr == ""){
+        console.log("");
+    }
 }
 
 console.log("================");
