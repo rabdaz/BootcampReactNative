@@ -1,8 +1,29 @@
-import { AppRegistry } from 'react-native';
-import App from './Tugas-12-Component/App';
+import { StatusBar } from 'expo-status-bar';
+import React, { Component } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
-AppRegistry.registerComponent('youtubeUi', () => App);
+import LoginScreen from './Tugas-13-Styling&Flex/LoginScreen';
+import AboutScreen from './Tugas-13-Styling&Flex/AboutScreen';
+import { render } from 'react-dom';
 
+export default function App(){
+  return (
+    <LoginScreen/>
+    // <View style={styles.container}>
+    //   <StatusBar style="auto" />
+    //   <HomeScreen/>
+    // </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    // backgroundColor: '#fff',
+    // alignItems: 'center',
+    // justifyContent: 'center',
+  },
+});
 
 
 
