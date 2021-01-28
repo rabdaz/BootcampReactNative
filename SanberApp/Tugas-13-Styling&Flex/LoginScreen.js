@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, FlatList, View, Image } from 'react-native';
+import { StyleSheet, Text, FlatList, View, Image, TouchableOpacity, TextInput} from 'react-native';
 import Constant from 'expo-constants'
+
+//const username ;
 
 
 export default class App extends Component{
+    state={
+        email:"",
+        password:"",
+    }
     render(){
         return(
             <View style={styles.container}>
@@ -18,6 +24,7 @@ export default class App extends Component{
                     <Text style={{
                         color: darkBlue,
                         fontSize: 24,
+                        fontWeight: 'bold',
                     }}>Login</Text>
                 </View>
                 <View style={styles.textEmailPw}>
@@ -26,31 +33,46 @@ export default class App extends Component{
                         fontSize: 16,
                     }}>Username/email</Text>
                 </View>
-                <View style={styles.boxInput}/>
+                <View style={styles.boxInput}>
+                    <TextInput style ={styles.inputText} placeholder="contoh: wuri@gmail.com" 
+                    placeholderTextColor='gray'
+                    onChangeText={text => this.setState({email:text})}/>
+                </View>
                 <View style={styles.textEmailPw}>
                     <Text style={{
                         color: darkBlue,
                         fontSize: 16,
                     }}>Password</Text>
                 </View>
-                <View style={styles.boxInput}/>
-                <View style={styles.boxLabel1}>
-                    <Text style={{
-                        color: 'white',
-                        fontSize: 24,
+                <View style={styles.boxInput}>
+                    <TextInput 
+                        secureTextEntry
+                        style ={styles.inputText} placeholder="ketikan password anda" 
+                        placeholderTextColor="gray"
+                        onChangeText={text => this.setState({text})}
+                    />
+                </View>
+                <View>
+                    <TouchableOpacity style={styles.boxLabel1}>
+                        <Text style={{
+                            color: 'white',
+                            fontSize: 20,
                         }}>Masuk</Text>
+                    </TouchableOpacity>
                 </View>
                 <View style={{marginTop:16, justifyContent: 'center', alignItems: 'center',}}>
                     <Text style={{
                         color: lightBlue, 
-                        fontSize: 24,
+                        fontSize: 20,
                         }}>atau</Text>
                 </View>
-                <View style={styles.boxLabel2}>
-                    <Text style={{
-                        color: 'white',
-                        fontSize: 24,
-                    }}>Daftar?</Text>
+                <View>
+                    <TouchableOpacity style={styles.boxLabel2}>
+                        <Text style={{
+                            color: 'white',
+                            fontSize: 20,
+                        }}>Daftar?</Text>
+                    </TouchableOpacity> 
                 </View>
             </View>
         )
@@ -74,8 +96,14 @@ const styles=StyleSheet.create({
         borderColor: darkBlue,
         marginLeft: 41,
         marginTop: 4,
-        justifyContent: "flex-start"
-    //     borderRadius: 20,
+        justifyContent: "center",
+        alignItems:"flex-start",
+        borderRadius: 10,
+    },
+    inputText:{
+        height: 50,
+        fontSize: 14,
+
     },
     textEmailPw:{
         marginLeft:41, 
@@ -91,8 +119,8 @@ const styles=StyleSheet.create({
         justifyContent: "center",
         alignItems:"center",
         marginLeft: 118,
-        marginTop: 16,
-        borderRadius: 16,
+        marginTop: 25,
+        borderRadius: 14,
     },
     boxLabel2:{
         width: 140,
@@ -104,7 +132,7 @@ const styles=StyleSheet.create({
         alignItems:"center",
         marginLeft: 118,
         marginTop: 16,
-        borderRadius: 16,
+        borderRadius: 14,
     },
 })
 

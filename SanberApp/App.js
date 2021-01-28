@@ -8,7 +8,10 @@ import { render } from 'react-dom';
 
 export default function App(){
   return (
-    <LoginScreen/>
+    //<LoginScreen/>
+    
+    <AboutScreen/>
+    
     // <View style={styles.container}>
     //   <StatusBar style="auto" />
     //   <HomeScreen/>
