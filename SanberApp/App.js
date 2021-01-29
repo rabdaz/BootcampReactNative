@@ -1,32 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'; //Tugas 14
+import Main from './Tugas14/components/Main';
 
-import LoginScreen from './Tugas-13-Styling&Flex/LoginScreen';
-import AboutScreen from './Tugas-13-Styling&Flex/AboutScreen';
-import { render } from 'react-dom';
-
-export default function App(){
-  return (
-    //<LoginScreen/>
-    
-    <AboutScreen/>
-    
-    // <View style={styles.container}>
-    //   <StatusBar style="auto" />
-    //   <HomeScreen/>
-    // </View>
-  );
+export default class App extends React.Component {
+  render() {
+    return (
+      <Main />
+    )
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    // backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
-  },
-});
 
 
 
